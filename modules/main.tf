@@ -12,7 +12,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  # AMI ID can be different based on the region (see https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html)
-  ami           = "ami-0ddda618e961f2270"
-  instance_type = "t2.micro"
+  ami           = var.ami_id
+  instance_type = var.instance_type
 }
