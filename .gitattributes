@@ -37,4 +37,6 @@
 *.pickle filter=lfs diff=lfs merge=lfs -text
 *.npy filter=lfs diff=lfs merge=lfs -text
 
-
+# Terraform binary files
+bin/terraform filter=lfs diff=lfs merge=lfs -text
+bin/terraform.exe filter=lfs diff=lfs merge=lfs -text
