@@ -13,6 +13,7 @@ jupyter = "^1.0.0"
 polars = "^0.20.17"
 seaborn = "^0.13.2"
 pandas = "^2.2.1"
+awscli = "^1.32.103"
 
 
 [build-system]
