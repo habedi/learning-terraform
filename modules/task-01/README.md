@@ -1,6 +1,12 @@
-This module creates a single server on AWS using Terraform. The server is an EC2 instance with a public IP address.
+# Task 01 - Single Server on AWS
 
-To run the module, you need to have an AWS account and configure the AWS CLI on your machine.
+This Terraform module provisions a single server plus networking resources including a VPC, subnet, and security group.
+
+## How to Work with the Module
+
+To run the module, you need to have an AWS account with the necessary permissions to create the resources. You also need
+to
+and configure the AWS CLI on your machine to use the account credentials.
 
 You can run the module by following the steps below:
 
