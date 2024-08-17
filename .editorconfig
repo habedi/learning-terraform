@@ -38,4 +38,4 @@ indent_size = 2
 
 # Terraform files
 [*.tf]
-indent_size = 2
+indent_size = 4

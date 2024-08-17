@@ -1,19 +1,19 @@
 # Learning Terraform with AWS
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![CodeFactor](https://www.codefactor.io/repository/github/habedi/learning-terraform/badge)](https://www.codefactor.io/repository/github/habedi/learning-terraform)
 [![Made with Love](https://img.shields.io/badge/Made%20with-Love-red.svg)](https://github.com/habedi/learning-terraform)
 
 The repository is divided into [modules](modules/), each of which covers a specific topic related to
 using [Terraform](https://www.terraform.io/) for managing
 infrastructure in AWS. Each module includes a README file with descriptions of what the module does and how to run it.
 
-The following table provides the list of modules:
+The following table provides the list of implemented modules and the tasks they cover.
 
-| Index | Task                                       | Implemented |
-|-------|--------------------------------------------|-------------|
-| 1     | [Create an EC2 Instance](modules/task-01/) | [x]         |
-| 2     | Add Tags to Resources                      | [ ]         |
-| 3     | Configure Load Balancer and Auto Scaling   | [ ]         |
-| 4     | Create a VPC and Subnets                   | [ ]         |
+| Index | Task                                                                 |
+|-------|----------------------------------------------------------------------|
+| 1     | [Create an EC2 instance](modules/task-01/)                           |
+| 2     | [Create an EC2 and an RDS MySQL database instance](modules/task-02/) |
 
 ## Installing Poetry
 
@@ -39,7 +39,3 @@ After that, enter the Poetry environment by invoking the poetry shell command.
 ```bash
 poetry shell
 ```
-
-## License
-
-Files in this repository are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
