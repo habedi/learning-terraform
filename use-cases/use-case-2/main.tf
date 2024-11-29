@@ -1,12 +1,3 @@
-terraform {
-    required_providers {
-        aws = {
-            source  = "hashicorp/aws"
-            version = "~> 3.0"
-        }
-    }
-}
-
 # AWS Region to deploy the resources
 provider "aws" {
     region  = var.region
@@ -107,7 +98,7 @@ resource "aws_db_instance" "my_mysql" {
     allocated_storage    = var.db_parameters.allocated_storage
     engine               = var.db_parameters.engine
     instance_class       = var.db_parameters.instance_class
-    name                 = var.db_parameters.name
+    db_name              = var.db_parameters.name
     username             = var.db_parameters.username
     password             = var.db_parameters.password
     vpc_security_group_ids = [aws_security_group.rds_sg.id]

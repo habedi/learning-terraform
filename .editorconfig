@@ -14,7 +14,7 @@ trim_trailing_whitespace = true # Remove trailing whitespace
 
 # Python specific settings, complying with PEP 8 style guide, except for the line length
 [*.py]
-max_line_length = 120
+max_line_length = 100
 
 # Markdown files
 [*.md]

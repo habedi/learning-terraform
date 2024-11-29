@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "learn-terraform"
 version = "0.1.0"
-description = "A repository for learning anything about Terraform and Infrastructure as Code"
+description = "A repository for learning about Terraform and Infrastructure as Code"
 authors = ["Hassan Abedi <hassan.abedi.t@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
