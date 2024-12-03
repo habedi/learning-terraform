@@ -1,0 +1,11 @@
+{
+  "version": "2018-05-29",
+  "statements": [
+    "update core_model.roles set name = :name::text, description = :description::text where id = :id::integer returning id, name, description"
+  ],
+  "variableMap": {
+    ":id": $util.toJson($ctx.args.id),
+    ":name": $util.toJson($ctx.args.name),
+    ":description": $util.toJson($ctx.args.description)
+  }
+}

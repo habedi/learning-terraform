@@ -1,0 +1,25 @@
+type Role {
+    id: ID! # The unique identifier for the role
+    name: String # The name of the role
+    description: String # The description of the role
+}
+
+# Queries
+type Query {
+    getRole(id: ID!): Role # Fetch a role by its ID
+    listRoles: [Role] # List all roles
+}
+
+# Mutations
+type Mutation {
+    createRole(id: ID!, name: String, description: String): Role # Create a new role
+    updateRole(id: ID!, name: String!, description: String!): Role # Update an existing role
+    deleteRole(id: ID!): Role # Delete a role
+}
+
+# Subscription (Optional)
+type Subscription {
+    onCreateRole: Role @aws_subscribe(mutations: ["createRole"]) # Listen for role creation
+    onUpdateRole: Role @aws_subscribe(mutations: ["updateRole"]) # Listen for role updates
+    onDeleteRole: Role @aws_subscribe(mutations: ["deleteRole"]) # Listen for role deletion
+}

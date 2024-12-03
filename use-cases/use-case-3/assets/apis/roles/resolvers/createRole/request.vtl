@@ -1,0 +1,11 @@
+{
+  "version": "2018-05-29",
+  "statements": [
+    "insert into core_model.roles (id, name, description) values (:id::integer, :name::text, :description::text) returning id, name, description"
+  ],
+  "variableMap": {
+    ":id": $util.toJson($ctx.args.id),
+    ":name": $util.toJson($ctx.args.name),
+    ":description": $util.toJson($ctx.args.description)
+  }
+}

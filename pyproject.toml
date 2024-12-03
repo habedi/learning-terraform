@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "learn-terraform"
+name = "terraform-usecases"
 version = "0.1.0"
-description = "A repository for learning about Terraform and Infrastructure as Code"
+description = "A collection of terraform use cases"
 authors = ["Hassan Abedi <hassan.abedi.t@gmail.com>"]
 readme = "README.md"
 license = "MIT"

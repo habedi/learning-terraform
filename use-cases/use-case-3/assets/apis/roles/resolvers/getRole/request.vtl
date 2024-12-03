@@ -1,0 +1,9 @@
+{
+  "version": "2018-05-29",
+  "statements": [
+      "select id, name, description from core_model.roles where id = :id::integer",
+  ],
+  "variableMap": {
+      ":id": $util.toJson($ctx.args.id)
+  }
+}
